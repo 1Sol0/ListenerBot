@@ -1,0 +1,23 @@
+Privacy Disclaimer for Self-Hosting:
+
+Important Notice:
+
+By self-hosting and deploying the voice recording bot ("the Bot"), you acknowledge and agree to the following:
+
+1. Data Collection: The Bot records voice conversations within voice channels on Discord servers where it is deployed. This includes audio recordings of users participating in these conversations.
+
+2. User Consent: As the operator of the Bot, it is your responsibility to ensure that users are informed about the recording activities and to obtain any necessary consent from them. This may include updating server rules, providing notices, and obtaining explicit consent from users before they join voice channels monitored by the Bot.
+
+3. Data Storage: The audio recordings and associated data collected by the Bot will be sent to a third-party service, https://curvebot.xyz, for processing and analysis. Please review https://curvebot.xyz's privacy policy for information on how they handle your data.
+
+4. Data Usage: The recorded data may be used by https://curvebot.xyz for moderation, analysis, or other legitimate purposes consistent with their policies and guidelines.
+
+5. Legal Compliance: You are responsible for ensuring that your use of the Bot and the recorded data complies with all applicable laws and regulations, including but not limited to data protection and privacy laws in your jurisdiction.
+
+6. Third-Party Services: By using the Bot, you acknowledge and agree to the terms and policies of https://curvebot.xyz. You are responsible for reviewing and complying with their terms of service, privacy policy, and any other relevant agreements.
+
+7. Disclaimer of Liability: You acknowledge that the Bot's functionality and the recorded data are provided on an "as is" and "as available" basis. We disclaim any warranties, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. We shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with the use or inability to use the Bot or the recorded data.
+
+8. Indemnification: You agree to indemnify and hold harmless the developers and maintainers of the Bot from any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of the Bot or the recorded data.
+
+Please Note: This disclaimer is provided for informational purposes only and does not constitute legal advice. We recommend consulting with legal counsel to ensure compliance with all relevant laws and regulations.

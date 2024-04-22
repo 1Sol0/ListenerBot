@@ -1,0 +1,18 @@
+{
+	"name": "receiver-bot",
+	"version": "0.0.1",
+	"description": "Listener bot for Curve voice channel moderator",
+	"main": "runner.js",
+	"scripts": {
+        "start": "node runner.js"
+	},
+	"author": "1Solo (_1solo on Discord)",
+	"license": "MIT",
+	"dependencies": {
+		"@discordjs/opus": "^0.9.0",
+		"@discordjs/voice": "^0.16.1",
+		"discord.js": "^14.14.1",
+		"node-crc": "^1.3.2",
+		"prism-media": "^2.0.0-alpha.0"
+	}
+}
