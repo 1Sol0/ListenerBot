@@ -1,0 +1,18 @@
+{
+
+    "": {
+        "curve_api_key": "", 
+        "voice_channel_id": "", 
+        "guild_id": "",
+        "ensure_consent": true
+    }, 
+
+    "": {
+        "curve_api_key":"", 
+        "voice_channel_id": "",
+        "guild_id": "", 
+        "ensure_consent": true 
+    }
+
+
+}
