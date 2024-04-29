@@ -97,12 +97,6 @@ function upload_audio(userId, randomNumber) {
         guild: guildID
     }
     postData(url, filePath, data)
-        .then(data => {
-            //console.log('File uploaded successfully:', data);
-        })
-        .catch(error => {
-            console.error('❌ File upload failed:', error);
-        });
 }
 
 // Connect the bot to the specified channel
@@ -155,7 +149,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
         const channel = newState.guild.channels.cache.get(newState.channelId);
         if (!channel || !channel.guild) return;
 
-        if (!oldState.channelId && newState.channelId) {
+        if ((!oldState.channelId && newState.channelId) && (newState.channelId == voiceID) || (oldState.channelId && newState.channelId) && (newState.channelId == voiceID && oldState.channelId != voiceID)) {
             user = client.users.cache.get(newState.member.id)
             console.log(`👋🏻 ${user.tag} Joined the voice channel`)
             if (ensureConsent) {
@@ -203,24 +197,22 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
                     pipeline(receiver.subscribe(userId), oggStream, writeStream, (err) => {
                         console.log("Pipeline")
                         if (err) {
-                            console.error(`❌ Error recording file ${filePath} - ${err.message}`);
+                            console.error(`❌ Error recording file`);
                         } else {
-                            console.log(`🧾 Recorded ${filePath}`);
+                            console.log(`🧾 Recorded`);
                         }
                     });
-                })
 
-                receiver.speaking.on('end', async (userId) => {
-                    user = client.users.cache.get(userId)
-                    //await sleep(8000)
-                    console.log(`⬆ Uploading audio data, ${user.tag}`);
-                    upload_audio(userId, randomNumber)
+                    receiver.speaking.on('end', async (userId) => {
+                        user = client.users.cache.get(userId)
+                        console.log(`⬆ Uploading audio data, ${user.tag}`);
+                        upload_audio(userId, randomNumber)
+    
+                    })
 
                 })
             }
-        } else if (oldState.channelId && !newState.channelId) {
-            // User left voice channel do nothing but cope
-        }
+        } 
     } catch (error) {
         console.error("❌ Error in voiceStateUpdate event:", error);
     }
